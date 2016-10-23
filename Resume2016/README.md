@@ -1,6 +1,6 @@
 # My Resume
+链接： [https://fanyear.github.io/Resume/Resume2016/index.html](https://fanyear.github.io/Resume/Resume2016/index.html)
 
-[html.love](http://html.love)
 
 ## Introduction
 
