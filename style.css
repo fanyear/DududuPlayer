@@ -1,0 +1,411 @@
+html {
+    font-family: "Microsoft YaHei";
+    font-size: 10px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: 0px;
+    background: #16181C;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+header, footer {
+    width: 100%;
+    height: 60px;
+    background: #232326;
+}
+header {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    border-bottom: #B22323 4px solid;
+}
+header img {
+    width: 40px;
+    display: inline-block;
+    margin:10px 10px 10px 100px;
+    vertical-align: middle;
+}
+header span {
+    vertical-align: middle;
+}
+#id-top-playing {
+    display: inline-block;
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main {
+    width: 100%;
+    height: 80%;
+    height: 600px;
+    position: relative;
+}
+.to-page {
+    width: 40px;
+    height: 80px;
+    background: #555;
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+    z-index: 100;
+}
+.to-page:hover {
+    background: #666;
+}
+.to-page img {
+    width: 30px;
+}
+#id-pre-page {
+    left: 0px;
+    opacity: 0;
+}
+#id-next-page {
+    right: 0px;
+}
+.main-page {
+    width: 900px;
+    height: 100%;
+    margin: 0px auto;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    right: 50%;
+    transition: all 1s;
+    transform: translateX(-50%);
+}
+#id-page-0 {
+    width: 1100px;
+    left: 50%;
+    height: 1200px;
+}
+#id-page-1 {
+    right: -500%;
+}
+#id-page-1:hover {
+    /*left: -100%;*/
+}
+#id-page-1 .aside {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.lunpo {
+    margin: 0px auto;
+    width: 80%;
+    height: 40%;
+}
+#id-recommendation {
+    height: 55%;
+    width: 90%;
+    margin: 40px auto;
+}
+#id-recommendation a{
+    text-align: center;
+    display: block;
+    height: 50px;
+    color: #aaa;
+    font-size: 2rem;
+    line-height: 50px;
+}
+#id-recommendation-list {
+    display: block;
+}
+#id-recommendation-list .re-music {
+    display: inline-block;
+    width: 245px;
+    height: 270px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#id-recommendation-list .re-photo:hover {
+    box-shadow: 0px 0px 10px #777;
+}
+#id-recommendation-list .re-photo {
+    display: block;
+    margin: 20px 20px 0px 20px;;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    border-radius: 20px;
+}
+#id-recommendation-list .re-name {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #aaa;
+    font-size: 2rem;
+    text-align: center;
+}
+.left-aside {
+    float: left;
+}
+.right-aside {
+    float: right;
+    padding: 20px;
+}
+.music-cd {
+    height: 70%;
+    position: relative;
+}
+.cd-outside {
+    width: 330px;
+    height: 330px;
+    background: #999;
+    border-radius: 50%;
+}
+.cd {
+    width: 320px;
+    height: 320px;
+    background-image: url(img/cd.png);
+    border-radius: 50%;
+}
+#id-gan {
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+    left: 57%;
+    transform-origin:10px 15px;
+    transform: translateX(-50%) rotateZ(-30deg); ;
+    top:-19px;
+    transition: all 0.5s;
+}
+#id-cd-cover {
+    display: inline-block;
+    width: 235px;
+    height: 235px;
+    background-image: url(img/周杰伦.png);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#id-cd-cover:hover {
+     width: 220px;
+    height: 220px;
+}
+.bag {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#id-music-name {
+    height: 30%;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+.music-funtion {
+    padding: 30px;
+}
+.music-funtion span{
+    width: 30px;
+    font-size: 1.5rem;
+    background: #29262C;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 20px 10px;
+    cursor: pointer;
+    color: #aaa;
+}
+.music-funtion span:hover {
+    background: #333;
+    color: #fff;
+}
+.play-list {
+    height: 5%;
+    text-align: center;
+    font-size: 2rem;
+    color: #aaa;
+    margin:20px;
+}
+#id-music-play-list {
+    height: 90%;
+    font-size: 1.6rem;
+    color: #aaa;
+}
+.playing::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(img/cur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+.music-info-title {
+    height: 40px;
+    background: #333333;
+}
+.music-info-title span {
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+}
+.music-info-title .music-name ,.music-info .music-name{
+    width: 58%;
+}
+.music-info-title .music-duration,.music-info .music-duration{
+    width: 8%;
+}
+.music-info-title .music-singer,.music-info .music-singer{
+    width: 28%;
+}
+.music-info {
+    position: relative;
+    height: 30px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.music-info span {
+    display: inline-block;
+    line-height: 30px;
+    width: 32%;
+    text-align: center;
+}
+.music-info:nth-child(odd) {
+    background: #2a2a2a;
+}
+.music-info:nth-child(even) {
+    background: #222;
+}
+.music-info:hover {
+    background: #888;
+    color: #fff;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+}
+#id-music-control img {
+    width: 40px;
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+#id-music-control {
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    float: left;
+}
+#id-music-progress {
+    margin: 0px 250px;
+    height: 60px;
+}
+#id-progress {
+    margin: 0px 50px;
+    height: 60px;
+    position: relative;
+}
+#id-current-progress {
+    width:0%;
+    background: #B82525;
+}
+#id-music-progress-point {
+    left: 0%;
+}
+#id-current-time, #id-duration {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.music-progress {
+    cursor: default;
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    height: 5px;
+    border-radius: 2.5px;
+}
+#id-current-time {
+    float: left;
+}
+#id-duration {
+    float: right;
+}
+#id-music-vol-order {
+    float: right;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    position: relative;
+}
+#id-music-vol-order img {
+    cursor: pointer;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.music-vol {
+    display: inline-block;
+    width: 100px;
+    background: #fff;
+    height: 5px;
+    vertical-align: middle;
+    border-radius: 2.5px;
+    margin-left: 5px;
+}
+#id-music-vol {
+    width: 50px;
+    background: #B82525;
+    height: 6px;
+}
+#id-music-vol-point {
+    left: 150px;
+}
+.point {
+    width: 15px;
+    height: 15px;
+    margin-left: -5.5px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.point span{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #B82525;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.vetical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.midXY {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
