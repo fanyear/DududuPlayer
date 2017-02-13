@@ -1,12 +1,15 @@
-### 链接：[点击此处](https://fanyear.github.io/BaiduWebMission/dududuPlayer/music.html)
-![avatar](index.png)
-
-![avatar](player.png)
-
 ## dududu音乐播放器
 ***
 ### 效果展示
 
 ![demo](demo.gif)
 
-[点击 转移到资源页](https://github.com/fanyear/Canvas/tree/gh-pages/Timer)
+***
+### 功能说明
+- 可播放，暂停，切换音乐
+- 可更改音乐进度
+- 调节音量
+- 可切换播放模式（随机，循环，单曲）
+- CD动画显示播放
+- 首页推荐音乐，点击即可播放
+- 播放列表音乐，显示当前播放歌曲吗，点击其他音乐即可切换播放
